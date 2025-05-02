@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Irfan's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+</head>
+<body>
+
+  
+  <header class="hero">
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-left">
+        <h2 class="logo">FREELANCER</h2>
+        <!-- <p class="hi">Freelancer Portfolio</p> -->
+      </div>
+      <div class="nav-right">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <button onclick="toggleMode()" id="mode-toggle" class="mode-toggle">🌜</button>
+      </div>
+    </nav>
+    
+    
+  
+    <!-- Background Image -->
+    <img src="IMG_3411.jpeg" alt="Background" class="bg-img" />
+    <div class="overlay"></div>
+  
+    <!-- Hero Content -->
+    <div class="hero-content">
+      <h1><span class="highlight">Hi, I am</span> Irfan Khan</h1>
+      <p class="subtitle"><span id="typed"></span></p>
+
+      <a href="resume.pdf" class="btn-primary" download>Download Resume</a>
+    </div>
+  </header>
+  
+  <div class="typing-container">
+    <span id="typed"></span>
+  </div>
+  
+  
+
+  
+
+  <section id="projects" data-aos="fade-up">
+
+    <div class="projects">
+      <h2>My Projects</h2>
+    </div>
+    
+    <div class="project-grid">
+
+      <div class="project-card" onclick="openModal('vanilla')">
+        <img src="./img/movies.png" alt="Vanilla Movie">
+        <h1>Movies Booking System</h1>
+        <p style="color:rgb(255, 255, 255) ;">A simple, elegant movie database application 🍿
+
+          Movies Booking System is a user-friendly web application built with pure HTML, CSS, and JavaScript, providing an interactive platform for users to browse and search for movies. 🎥 The app utilizes an external API to fetch real-time movie data, offering details such as movie titles, posters, ratings 🌟, and release years 📅. The design is sleek and minimalistic, focusing on a smooth user experience with intuitive navigation. 🖱️ This project showcases my skills in front-end web development, including data fetching, dynamic content rendering, and responsive design. 📱</p>
+
+
+        <!-- Project 1: Netflix Clone -->
+    <div class="project-card" onclick="openModal('netflix')">
+      <img src="./img/netflix.png" alt="Netflix Clone" />
+      <h1>Netflix Clone</h1>
+      <p style="color:rgb(255, 255, 255) ;">About
+        A responsive Netflix Clone built with HTML, CSS, and JavaScript, focusing on seamless UI/UX and interactivity. ✨ Features: 🎥 Dynamic Movie Slider 🔑 Login & Sign-Up System 📱 Fully Responsive Design ❓ Interactive FAQ Section 🚀 Tech Stack: HTML5, CSS3, JavaScript LocalStorage Authentication</p>
+
+    </div>
+
+    <!-- Project 2: Can We Go On A Date -->
+    <div class="project-card" onclick="openModal('date-app')">
+      <img src="./img/prapose.png" alt="Can We Go On A Date" />
+      
+      <h1>Can We Go On A Date</h1>
+      <p style="color:rgb(255, 255, 255) ;">An interactive date planner app ❤️
+
+        "Can We Go on a Date?" is a playful and interactive web application designed to help users plan the perfect date! 💑 Using HTML, CSS, and JavaScript, the app allows users to input preferences such as location, activity type, and budget, and then generates date ideas based on those choices. 🌍 The app features a simple, user-friendly interface with smooth transitions and engaging visuals. This project demonstrates my skills in front-end development, interactive UI design, and dynamic content generation. 🎉</p>
+
+      
+
+    </div>
+
+    <!-- Project 3: Tic Tac Toe Game -->
+    <div class="project-card" onclick="openModal('tic-tac')">
+      <img src="./img/tictak.png" alt="Tic Tac Toe" />
+      <h1>Tic Tac Toe Game</h1>
+      <p style="color:rgb(255, 255, 255) ;">A classic, fun game built with HTML, CSS, and JavaScript 🎮
+
+        The Tic Tac Toe Game is a simple, interactive web-based game where users can play the classic game of Tic Tac Toe against another player or the computer. ✖️⭕ The game is built using HTML, CSS, and JavaScript, ensuring smooth gameplay with real-time updates and a clean, responsive design. 🎯 It features a user-friendly interface with an interactive board and win/lose notifications. This project highlights my skills in game logic, DOM manipulation, and responsive web design. 🌟</p>
+
+    </div>
+
+    <!-- Project 4: Salon Website -->
+    <div class="project-card" onclick="openModal('salon')">
+      <img src="./img/parlour.png" alt="Salon Website" />
+      <h1>Salon Website</h1>
+      <p style="color:rgb(255, 255, 255) ;">A stylish and functional website for a modern salon ✨
+
+        The Salon Website is a sleek, user-friendly platform designed to showcase salon services, offer online bookings, and display client testimonials. 💖 Built with HTML, CSS, and JavaScript, the website features a responsive layout, elegant design, and seamless navigation, making it easy for users to explore available services, check prices, and schedule appointments. 📅💻 The site also includes an interactive contact form and gallery to enhance the user experience. This project highlights my skills in creating visually appealing websites with responsive design and user-centric features. 🌸</p>
+
+    </div>
+
+    <div class="project-card" onclick="openModal('vanilla')">
+      <img src="./img/flower.png" alt="Vanilla Movie">
+      <h1>Blowing flower</h1>
+      <p style="color:rgb(255, 255, 255) ;">A simple, elegant movie database application 🍿
+        The Blowing Flower Project 🌸✨ is an interactive web animation where a flower blooms and "blows" in response to user actions like hovering or clicking. Using HTML 🖥️, CSS 🎨 for smooth animations, and JavaScript 💻 for interaction, it creates a colorful and engaging user experience. 🌈
+      </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+      <a id="modal-link" href="#" target="_blank">🔗 View Project</a>
+    </div>
+  </div>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- 🌙 FOOTER -->
+<footer>
+  <p>&copy; 2025 Irfan Khan. All rights reserved.</p>
+  <p>📬 <a href="mailto:irfank092003@gmail.com">irfank092003@gmail.com</a></p>
+  <p>🔗 <a href="https://github.com/Irfankhan-123" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/irfan-khan-8790562b8" target="_blank">LinkedIn</a></p>
+</footer>
+
+
+  
+  <!-- Modal Section (Place this just before </body>) -->
+<!-- Modal Section -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">×</span>
+    <h2 id="modal-title"></h2>
+    <p id="modal-description"></p>
+    <a id="modal-link" class="modal-button" target="_blank">🚀 View Project</a>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,  // animation time (ms)
+    once: true       // animate only once
+  });
+</script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+<script>
+  VanillaTilt.init(document.querySelectorAll(".project-card"), {
+    max: 15,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.4
+  });
+</script> -->
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed('#typed', {
+    strings: ["I'm Irfan Khan.", "A Front-End Developer.", "A UI/UX Designer.", "A Product Enthusiast."],
+    typeSpeed: 60,
+    backSpeed: 30,
+    loop: true
+  });
+</script> -->
+
+
+
+<script>
+  var typed = new Typed('#typed', {
+    strings: [
+      "I'm Irfan Khan",
+      "A Front-End Developer",
+      "A Java Developer",
+      "A UI/UX Designer",
+      "A Product Enthusiast."
+    ],
+    typeSpeed: 60,
+    backSpeed: 30,
+    loop: true
+  });
+</script>
+
+
+
+</body>
+</html>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Irfan Khan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header (optional) -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Irfan Khan</h1>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-container">
+    <h2>📞 Contact Me</h2>
+    <form action="https://formsubmit.co/irfank092003@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    
+      <!-- ✅ Disable CAPTCHA (optional) -->
+      <input type="hidden" name="_captcha" value="false">
+    
+      <!-- ✅ Redirect to your live contact page -->
+      <input type="hidden" name="_next" value="https://www.linkedin.com/in/irfan-khan-8790562b8/">
+    
+      <button type="submit">Send Message</button>
+    </form>
+    <!-- ✅ Thank-you message (initially hidden) -->
+<div id="thank-you-message" style="display:none; color: green; font-weight: bold; margin-top: 1rem;">
+  ✅ Thanks! Your message has been sent.
+</div>
+
+    
+
+    <!-- ✅ Step 3: Add Map Here -->
+    <h3 style="margin-top: 40px;">📍 My Location</h3>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234700.3465926973!2d77.24073730110192!3d23.199639106528092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c428f8fd68fbd%3A0x2155716d572d4f8!2sBhopal%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1745147077498!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Irfan Khan. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    if (window.location.search.includes("success=1")) {
+      document.getElementById("thank-you-message").style.display = "block";
+    }
+  </script>
+  
+  
+  
+</body>
+</html>
